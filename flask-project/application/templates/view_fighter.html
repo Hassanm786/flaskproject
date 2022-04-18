@@ -1,0 +1,10 @@
+{% extends 'layout.html' %} 
+
+
+
+{% block body %}
+<h2 style='color:rgb(13, 153, 71);'>Fighters waiting to be added to the roster</h2>
+{% for Fighter in all_fighters %}
+  <br>  [ID] = {{Fighter.id}} [NAME] = {{Fighter.name}} [FIGHTING OUT OF] =  {{Fighter.country}} <a href="{{ url_for('update_fighter', name = Fighter.name) }}"><button type="button">Update</button></a><a href="{{ url_for('delete_fighter', name = Fighter.name) }}"><button type="button">Delete fighter</button></a> </p><br>
+{% endfor %}
+{% endblock %}
