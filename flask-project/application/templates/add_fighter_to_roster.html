@@ -1,0 +1,12 @@
+{% extends 'layout.html' %} 
+
+{% block body %}
+<h2 style='color:rgb(255, 72, 0);'>Add listed fighters to the roster</h2>
+<form action="http://35.197.218.108:5000/add_fighter_to_roster" method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.weight_class.label }} {{ form.weight_class }}
+    {{ form.rank.label }} {{ form.rank }}
+    {{ form.fighter_name.label }} {{ form.fighter_name }}
+    {{ form.submit }}
+</form>
+{% endblock body %}

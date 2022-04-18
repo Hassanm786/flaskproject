@@ -1,0 +1,16 @@
+{% extends 'layout.html' %} 
+
+
+{% block body %}
+
+<h2 style='color:rgb(3, 82, 75);'>Add the scouted fighters here</h2>
+
+<form action="" method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.name.label }} {{ form.name }}
+    <br>
+    {{ form.country.label }} {{ form.country }}
+    <br>
+    {{ form.submit }}
+</form>
+{% endblock body %}
