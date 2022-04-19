@@ -1,0 +1,12 @@
+{% extends 'layout.html' %} 
+
+
+
+{% block body %}
+<form action="{{ url_for('update_fighter', name = name) }}" method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.name.label }} {{ form.name }}
+    {{ form.country.label }} {{ form.country }}
+    {{ form.submit }}
+</form>
+{% endblock body %}

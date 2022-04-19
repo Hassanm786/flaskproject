@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block body %}
+<h2 style='color:rgb(13, 55, 119);'>The current UFC roster</h2>
+{% for Roster in current_roster %}
+    <br>  [ID] =  {{Roster.id}}   [WEIGHT CLASS] = {{Roster.weight_class}} [FIGHTER RANK] = {{Roster.rank}} [FIGHTER NAME] = {{Roster.fighter_name}} <a href="{{ url_for('update_roster', id = Roster.id) }}"><button type="button">Update</button></a><a href="{{ url_for('release_fighter', id = Roster.id) }}"><button type="button">Release fighter</button></a> </p><br>
+{% endfor %}
+{% endblock %}

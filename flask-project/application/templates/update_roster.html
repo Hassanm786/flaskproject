@@ -1,0 +1,13 @@
+{% extends 'layout.html' %} 
+
+
+
+{% block body %}
+<form action="{{ url_for('update_roster', id=id) }}" method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.weight_class.label }} {{ form.weight_class }}
+    {{ form.rank.label }} {{ form.rank }}
+    {{ form.fighter_name.label }} {{ form.fighter_name }}
+    {{ form.submit }}
+</form>
+{% endblock body %}
