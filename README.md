@@ -74,10 +74,4 @@ What i could improve on
 ## Authors
 Hassan Mahmood
 
-##Ackowledgements
-I would like to thank Earl Grey for all the support he has given. I would also like to thank my family and my wife for being supportive
-through this tough week.
-
-
-
 
